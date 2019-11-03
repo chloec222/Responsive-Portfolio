@@ -1,71 +1,59 @@
-@media (min-width:769px) and (max-width: 1024px){
-    body{
-        background-image: url("images/subtle_grunge.png");
+
+  @media only screen and (max-width: 640px) {
+    a.logo{
+      color:#ffffff;
     }
-        
-}
-
-@media (min-width:641px) and (max-width: 768px){
-    body{
-        background-image: url("images/subtle_grunge.png");
-    }   
-}
-
-@media (min-width:0px) and (max-width: 640px){
-    body{
-        background-image: url("images/subtle_grunge.png");
-    }  
-}
+  }
 
 
-    .text{
-        color: #777777;
-        padding: 10px;
-        font-family:Arial, Helvetica, sans-serif;
-        font-size: 1em;  
-        font-weight: lighter;   
+  @media only screen and (max-width: 768px) {
+    a.logo{
+      color:#ffffff;
     }
+  }
+
+
+  @media only screen and (max-width: 980px) {
+    a.logo{
+      color:#ffffff;
+    }
+  }
    
-
-
-body{
+  body{
     background-image: url("images/subtle_grunge.png");
     width:100%
 }
 
 
 .header{
-    border: 1px solid #ffffff;
-    background: #ffffff;
+    background: #4aaaa5;
     width:100%;
-    border-bottom: 1px solid #cccccc;    
+    border-bottom: 1px solid #cccccc;
+    position: relative; 
+    top: -10px;   
 }
 
 
-.wrapper{
-    width: 960px;
-    margin: 20px auto;
-}
 
-
-.logo{
+h2{
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #4aaaa5;
-    padding:20px 40px;
-    border: 1px solid #cccccc;
-    width:45%;
+    padding-top:.5em;
+    margin:auto;
+    width:100%;
     text-decoration: none;
     font-size: 1.6em;
-    font-weight: 650;
-    vertical-align: middle;
     text-align: center;
     letter-spacing: .05em;
 }
 
 
-#nav{
-    float: right;
+nav{
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  padding: .5em;
 }
 
 
@@ -74,24 +62,26 @@ li{
     display: inline-block; 
     font-size: .9em; 
     letter-spacing: 0.03em; 
-    vertical-align: middle;  
+    text-decoration: none;
+    color: #cccccc;
+     
 }
 
 
 a{
     text-decoration: none;
-    color: #777777;
-}
-
-
-a:hover{
     color: #cccccc;
 }
 
 
-.wrapper2{
-    width: 960px;
-    margin:0 auto;
+a:hover{
+    color: #f38014;
+}
+
+
+.wrapper{
+    width: 90%;
+    margin:auto;
     margin-top: 20px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
@@ -101,30 +91,24 @@ a:hover{
 section{
     background-color: #ffffff;
     border: 1px solid #dddddd;
+    display:inline-block;
 }
 
 
 
-img.small{
-    width:200px;
-    height: 200px;
-    margin: 10px 30px 30px 30px;
+.responsive{
+    width:100%;
+    height: auto;
+    margin: auto;
 }
 
 
-img.align-left{
-    float:left;
-    margin-right:30px;
-}
-
-
-
-#heading2{
+h3{
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-    padding:20px;
-    margin: 30px;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
     letter-spacing: 0.05em;
     border-bottom: 1px solid #cccccc;
 }
@@ -132,7 +116,7 @@ img.align-left{
 
 p{
     color: #777777;
-    margin: 40px;
+    margin: 2em 2em;
     font-family:Arial, Helvetica, sans-serif;
     font-size: .9em;
     line-height: 2em;
@@ -140,51 +124,52 @@ p{
 
 
 #space{
-    margin: 200px;
+    margin: 5em;
 }
 
 
 
-#footer{
+.footer{
     text-align: center;
     border-top: 10px solid #4aaaa5;
     background-color: #666666;
     width:100%;
     overflow: hidden;
+    position: relative; 
+    bottom: +20px;
 }
 
 
-#copyright{
+.copyright{
     color:#cccccc;
 }
 
 
 img.medium{
-    width:300px;
-    height: 200px;
-    margin:30px;
+    width:100%;
+    height: auto;
+    margin: auto;
 }
 
 
-
-
 .container {
-        position: relative; 
-        max-width: 300px; /* Maximum width */
-        float: left;
-        margin: 30px;
+    position: relative; 
+    width: 45%; /* Maximum width */
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
 
-      }
+}
       
-      .container .content {
-        position: absolute; /* Position the background text */
-        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-        background: #4aaaa5; /* Fallback color */
-        color: #ffffff; /* Grey text */
-        width: 300px; /* Full width */
-        text-align: center;
-        margin:30px;
-      }
+.content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: #4aaaa5; /* Fallback color */
+    color: #ffffff; /* Grey text */
+    width: 100%; /* Full width */
+    text-align: center;
+    margin:auto;
+}
 
 .title{
         color: #ffffff;
